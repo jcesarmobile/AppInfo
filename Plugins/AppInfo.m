@@ -13,7 +13,7 @@
 - (void)getInfo:(CDVInvokedUrlCommand*)command {
     CDVPluginResult* pluginResult = nil;
     NSDictionary * result = [[NSBundle mainBundle] infoDictionary];
-    NSLog(@"dictionary %@",result);
+    //NSLog(@"dictionary %@",result);
     NSMutableDictionary * myDict = [[NSMutableDictionary alloc]init];
     [myDict setValue:[result objectForKey:@"CFBundleName" ] forKey:@"CFBundleName"];
     [myDict setValue:[result objectForKey:@"CFBundleShortVersionString" ] forKey:@"CFBundleShortVersionString"];
